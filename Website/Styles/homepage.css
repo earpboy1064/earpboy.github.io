@@ -1,0 +1,43 @@
+
+main{
+	font-size: 1.7em;
+	font-family: Montserrat; 
+	text-decoration: none;
+	}
+main img{
+	max-width: 100%;
+	}
+#img{
+	width: 100%;
+	}
+#services{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	}
+#services img{
+	width: 98%;
+	}
+#experience{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	}
+#experience img{
+	width: 98%;
+	}
+#projects{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	}
+#projects img{
+	width: 98%;
+	}
+main a{
+	text-decoration: none;
+	color: black;
+}

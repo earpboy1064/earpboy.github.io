@@ -1,0 +1,50 @@
+#pagetitle{
+	clear: both
+	font-family: Montserrat; 
+	font-size: 1.3em;
+	}
+#left{
+	float: left;
+	width: 50%;
+	}
+#snailmail{}
+#contact{}
+fieldset{
+	border: 2px solid;
+	margin: 10px;
+	}
+form{
+	width: 99%;
+	}
+legend{}
+label{
+	min-width: 105px;
+	width: 15%;
+	float: left;
+	clear: left;
+	margin: 5px;
+	font-size: initial;
+	}
+input, textarea{
+	display: block;
+	margin: 5px;
+	width: webkit-fill-available;
+	}
+#name{}
+#email{}
+#comments{}
+#submit{
+	display: inline;
+	width: 100px;
+	clear: left;
+	//background-color: ;
+	//border-color: ;
+	}
+#right{
+	float: left;
+	width: 50%;
+	}
+#map{
+	width: 100%;
+	height: 400px;
+	}
