@@ -1,0 +1,47 @@
+main{
+	}
+main img{
+	width: 100%;
+	}
+#pagetitle{
+	clear: both;
+	}
+#content{
+	}
+#projectsnav{
+	display: inline;
+	float: left;
+	width: 34%;
+	border: solid 2px;
+	}
+#current{
+	}
+#previous{
+	}
+#project{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 64%;
+}
+	
+#projectinfo{
+	width: 100%;
+	}
+#projectpics{
+	width: 100%;
+	}
+#projectimage{
+	display: inline;
+	float: left;
+	width: 33.3%;
+	}
+#projectimage img{
+	width: 98%;
+	}
+h2{
+	text-align:left;
+	font-family: Montserrat; 
+	font-size: 1.5em;
+	text-decoration: underline;
+	}

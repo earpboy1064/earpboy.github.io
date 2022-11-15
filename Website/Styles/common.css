@@ -1,0 +1,74 @@
+body{
+	background-color: #3a4660;//This is just until I can find another image to repeat as the background;
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	}
+#wrapper{
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	background-color:  #A67F4B;//This is just so I can see the reactiveness of #wrapper-DELETE LATER.
+	}
+header{
+	text-align: center;
+	font-family: Audrey;
+	color: #c9af98;
+	font-size: 4.4em;
+	background-color: #714506;
+	}
+nav {
+	margin-top: 10px;
+	background-color: #A67F4B;
+	font-size: 1.7em;
+	text-align: left;
+	}
+nav a{
+	color:#185481;
+	font-family: Montserrat;
+	text-decoration: none;
+	padding: 14px 20px;
+
+	}
+nav a:hover {
+	background-color: #bb9869;
+	}
+main{
+	}
+main a{
+	text-decoration: none;
+	color: black;
+	}
+main a:hover, main a:hover p, main a:hover h2, main a:hover h3{
+	background-color:#bb9869;
+	}
+#bottom{
+	font-size: 1.7em;
+	clear: both;
+	}
+#social{
+	display: inline;
+	float:left;
+	text-align: center;
+	width: 25%;
+	}
+#phone{
+	display: inline;
+	float:left;
+	text-align: center;
+	width: 25%;
+	}
+#address{
+	display: inline;
+	float:left;
+	text-align: center;
+	width: 50%;
+	}
+footer{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: #A67F4B;
+	color: #000000;
+	font-size: 0.7em;
+	}

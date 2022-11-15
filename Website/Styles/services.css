@@ -1,0 +1,42 @@
+main{
+	}
+main img{
+	max-width: 100%;
+	}
+#left{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 65%;
+	}
+#right{
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 35%;
+	}
+#pagetitle{
+	}
+#provided{
+	}
+#image{
+	}
+#story{
+	}
+h1{
+	text-align:left;
+	font-family: Montserrat; 
+	font-size: 1.5em;
+	text-decoration: underline;
+	}
+h2{
+	font-family: Montserrat; 
+	font-size: 1.8em;
+	margin: 0;
+	}
+p{
+	font-family: Montserrat; 
+	margin:7px;
+	font-size: 1.2em;
+}
+	
