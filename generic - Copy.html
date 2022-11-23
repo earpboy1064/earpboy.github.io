@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	https://www.geeksforgeeks.org/html-forms/
+-->
+<html>
+	<head>
+		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Example lesson</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="elements.html">TA/GA Applications</a></li>
+					<li><a href="generic.html">Academic Advising</a></li>
+                                        <li><a href="generic2.html">Programs of Study </a></li>
+                                        <li><a href="generic3.html">Career Options and Recent Alumni</a></li>
+                                        <li><a href="generic4.html">Scholarships</a></li>
+                                        <li><a href="generic5.html">Student Clubs and Organizations</a></li>
+                                        <li><a href="generic6.html">Policies, Procedures, and Math Placement Testing</a></li>
+                                        <li><a href="generic7.html">Colloquia, Conferences and Other Events</a></li>
+                                        <li><a href="generic8.html">Research Interests and Seminars</a></li>
+ 					<li><a href="generic9.html">Faculty and Staff Contacts</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Example Lesson </h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2><font color = "green">Lesson 1</font></h2>
+						</header>
+						<p>In describing computers, a distinction is often made between computer architecture
+							and computer organization. Although it is difficult to give precise definitions
+							for these terms, a consensus exists about the general areas covered by each. For
+							example, see [VRAN80], [SIEW82], and [BELL78a]; an interesting alternative view
+							is presented in [REDD76].
+							Computer architecture refers to those attributes of a system visible to a programmer
+							or, put another way, those attributes that have a direct impact on the
+							logical execution of a program. A term that is often used interchangeably with computer
+							architecture is instruction set architecture (ISA). The ISA defines instruction
+							formats, instruction opcodes, registers, instruction and data memory; the effect of
+							executed instructions on the registers and memory; and an algorithm for controlling
+							instruction execution. Computer organization refers to the operational units
+							and their interconnections that realize the architectural specifications. Examples of
+							architectural attributes include the instruction set, the number of bits used to represent
+							various data types (e.g., numbers, characters), I/O mechanisms, and techniques
+							for addressing memory. Organizational attributes include those hardware details
+							transparent to the programmer, such as control signals; interfaces between the computer
+							and peripherals; and the memory technology used.
+							For example, it is an architectural design issue whether a computer will have
+							a multiply instruction. It is an organizational issue whether that instruction will be
+							implemented by a special multiply unit or by a mechanism that makes repeated
+							use of the add unit of the system. The organizational decision may be based on the
+							anticipated frequency of use of the multiply instruction, the relative speed of the
+							two approaches, and the cost and physical size of a special multiply unit.
+							Historically, and still today, the distinction between architecture and organization
+							has been an important one. Many computer manufacturers offer a family of
+							computer models, all with the same architecture but with differences in organization.
+							Consequently, the different models in the family have different price and performance
+							characteristics. Furthermore, a particular architecture may span many years
+							and encompass a number of different computer models, its organization changing
+							with changing technology. A prominent example of both these phenomena is the
+							IBM System/370 architecture. This architecture was first introduced in 1970 and<br>
+
+							<b><br>Majors:</b> are those students who have earned at least 45 college credit hours and will be advised by department faculty.<br>
+						
+							
+							
+							<h1 style="text-align: center;">Question 1</h1>
+							<b><br>Q1</b> What is the proper way to access the element in array arr with variable i<br>
+							
+							<!-- This is the function for checking solutions-->
+							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
+						
+					<p>Answer: <input type="text"
+										size="65" name="Name" /></p>
+			
+						<br />
+						<button type = "submit">Submit</button>
+
+						<br><br><br><br><br><br><br><br> 
+ 
+						<button class = "button button1"> Next </button>	
+						<button class = "button button2"> Back </button>	
+
+
+
+
+						<!--			
+					<boxleft>
+				
+						this is the testing text yada yada yada yada yada	
+						
+					</boxleft>
+					-->
+					</div>
+				</div>
+			</section>
+
+			<style>
+				.button1
+				{
+					color: green;
+					background-color: lightgreen;
+					position: absolute;
+  					top:90%;
+ 					right: 20%;
+  					width: 120px;
+  					transform: translateY(-20%);
+
+				}
+
+				.button2
+				{
+					color: red;
+					background-color: lightsalmon;
+					position: absolute;
+  					top:90%;
+ 					right: 70%;
+  					width: 120px;
+  					transform: translateY(-20%);
+
+				}
+
+				
+
+
+			</style>
+
+
+
+
+
+<!-- This is the function for checking solutions-->
+			<html>
+				<head>
+					<script>
+						function solutionCheck() {
+							var name =
+								document.forms.RegForm.Name.value;
+						
+						
+			
+							if (name != "arr[i]") {
+								window.alert("Incorrect Please try again");
+								name.focus();
+								return false;
+							}
+							else 
+							{
+								window.alert("Correct!");
+								name.focus();
+								return true;
+							}
+							
+							return true;
+						}
+					</script>
+			
+
+
+
+
+					<style>
+						answerbox {
+							box-sizing: border-box;
+							width: 100%;
+							border: 100px solid black;
+							float: left;
+							align-content: center;
+							align-items: center;
+						}
+			
+						form {
+							margin: 0 auto;
+							width: 600px;
+						}
+			
+						boxleft 
+						{
+							background: ghostwhite;
+							width: 50px;
+							font-size: 20px;
+							padding: 10px;
+							border: 1px solid orangered;
+							margin: 10px;
+						}
+					</style>
+				</head>
+			
+				<body>
+					
+			</html>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Example</h3>
+						</section>
+						<section>
+							<ul class="alt">
+								<li><a href="http://sciences.aum.edu/academic-programs">Academic Programs</a></li>
+                                                                <li><a href="http://sciences.aum.edu/student-resources">Student Resources</a></li>
+                                                               
+							</ul>
+						</section>
+						<section>
+							<h4>Follow Us!</h4>
+							<ul class="plain">
+								<li><a href="https://twitter.com/aumontgomery"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                                                                <li><a href="https://www.facebook.com/AUM.COS/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                                                                <li><a href="https://www.instagram.com/auburnmontgomery/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
