@@ -52,23 +52,14 @@
 							Now that we are familiar with strings we will learn about the concept of variables.
 							A variable is a container that can contain different types of data. A variable type that you are now familiar with is the string,
 							the string only contains characters. Other types of variables include integer which is any whole number, and a float, which is a whole number that also has decimal places.
-							In this lesson we will practice creating and using these variables. First we will create two new integer variables
-						    <div class="image">
-								<img src="images/lessonTwoImages/Picture1.png" alt="" />
-							
+							In this lesson we will practice creating and using these variables. First we will create two new integer variables.
+							<br><code>number_one = 10</code><br><code> number_two = 7</code><br>
 							Now that we have two variables, we will then practice using them. First, we will add and store the result in a new variable.							
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture2.png" alt="" />
-
+							<br><code>number_three = number_one + number_two</code><br>
 							We will now print this new variable.
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture3.png" alt="" />
-							
-
+							<br><code>print(number_three)</code><br>
 							And look at the output in our terminal
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture4.png" alt="" />
-								
+							<br><code>17</code><br>
 
 								
 
@@ -85,6 +76,11 @@
 							<h1 style="text-align: center;">Question 1</h1>
 							<b><br></b>what would be the value of number_three if the first two variables had the values 5 and 9?<br><br>
 							
+							
+							<p><a href="Lesson3.html"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
+								<a href="Lesson1.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button>	</a></p>
+			
+
 							<!-- This is the function for checking solutions-->
 							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
 						
@@ -95,11 +91,6 @@
 
 						<br><br><br><br><br><br><br><br> 
  
-						<a href="Lesson3.html"><button type = "button" id="mybutton" class = "button1">   <font color = "black">Next</font> </button>	</a>
-						<a href="Lesson1.html"><button type = "button" class = "button2">  <font color = "black">Back</font> </button>	</a>
-	
-
-
 
 
 				
@@ -110,31 +101,24 @@
 			<style>
 				.button1
 				{
-
 					color: green;
 					background-color: lightgreen;
-					position: absolute;
-  					top:90%;
- 					right: 0%;
-					left: 95%;
-  					width: 140px;
-  					transform: translateY(-20%);
-					text-align: left;
+					width: 170px;
+					float: right;
+					transform: translateY(670%);
+
+  					
 
 				}
-
+				
 				.button2
 				{
 					color: red;
 					background-color: lightsalmon;
-					position: absolute;
-  					top:90%;
- 					right: 70%;
-  					width: 120px;
-  					transform: translateY(-20%);
-
+					float: left;
+					width: 170px;
+					transform: translateY(670%);
 				}
-
 			</style>
 
 
@@ -160,7 +144,7 @@
 						
 						
 			
-							if (name != "19") {
+							if (name != "14") {
 								correctAnswer('salmon', "Incorrect");
 								//window.alert("Incorrect Please try again");
 								//name.focus();
