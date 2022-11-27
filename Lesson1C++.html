@@ -53,45 +53,35 @@
 						<header>
 							<h2><font color = "green">Lesson 1</font></h2>
 						</header>
-						<p>In describing computers, a distinction is often made between computer architecture
-							and computer organization. Although it is difficult to give precise definitions
-							for these terms, a consensus exists about the general areas covered by each. For
-							example, see [VRAN80], [SIEW82], and [BELL78a]; an interesting alternative view
-							is presented in [REDD76].
-							Computer architecture refers to those attributes of a system visible to a programmer
-							or, put another way, those attributes that have a direct impact on the
-							logical execution of a program. A term that is often used interchangeably with computer
-							architecture is instruction set architecture (ISA). The ISA defines instruction
-							formats, instruction opcodes, registers, instruction and data memory; the effect of
-							executed instructions on the registers and memory; and an algorithm for controlling
-							instruction execution. Computer organization refers to the operational units
-							and their interconnections that realize the architectural specifications. Examples of
-							architectural attributes include the instruction set, the number of bits used to represent
-							various data types (e.g., numbers, characters), I/O mechanisms, and techniques
-							for addressing memory. Organizational attributes include those hardware details
-							transparent to the programmer, such as control signals; interfaces between the computer
-							and peripherals; and the memory technology used.
-							For example, it is an architectural design issue whether a computer will have
-							a multiply instruction. It is an organizational issue whether that instruction will be
-							implemented by a special multiply unit or by a mechanism that makes repeated
-							use of the add unit of the system. The organizational decision may be based on the
-							anticipated frequency of use of the multiply instruction, the relative speed of the
-							two approaches, and the cost and physical size of a special multiply unit.
-							Historically, and still today, the distinction between architecture and organization
-							has been an important one. Many computer manufacturers offer a family of
-							computer models, all with the same architecture but with differences in organization.
-							Consequently, the different models in the family have different price and performance
-							characteristics. Furthermore, a particular architecture may span many years
-							and encompass a number of different computer models, its organization changing
-							with changing technology. A prominent example of both these phenomena is the
-							IBM System/370 architecture. This architecture was first introduced in 1970 and<br>
+						<p>
+							
+							<br>
+							The first thing we are going to learn is how to get the computer to print out whatever message me want!
+							In order to do this we must open our chosen programming environment and create a new python file. 
+							This file will be where we will write our first program. To start off we need to define what we want the program to do.
+							This can be done on paper or in your head if you already have a good idea of what you want to accomplish. 
+							Our goal here is to print the words “Hello world” to the console. This printing will be done through the use of strings. 
+							The best way to understand strings is by looking at the words on this page. A string is a combination of usually two or more characters. 
+						 	Strings can be used to contain single words or an entire sentence or even an entire book. In our program our string will contain the words “Hello world” so the computer will know what to print.
+							To get started lets define our string, 
+						    <div class="image">
+								<img src="images/lessonimages/Output.PNG" alt="" />
+							
+							The name of our string is output, this is how we will tell the computer what it should print. 
+							
+							<div class="image">
+								<img src="images/lessonimages/print.PNG" alt="" />
 
-							<b><br>Majors:</b> are those students who have earned at least 45 college credit hours and will be advised by department faculty.<br>
-						
+							After we have made our new string and defined what it contains, 
+							we will then tell the computer to print our string. 
+							If we check our Terminal we should be able to see our string has been printed.
+							<div class="image">
+								<img src="images/lessonimages/outputPython.PNG" alt="" />
 							
-							
+
+							<br><br>
 							<h1 style="text-align: center;">Question 1</h1>
-							<b><br>Q1</b> What is the proper way to access the element in array arr with variable i<br>
+							<b><br>Q1</b>What is the name of the string we used?<br>
 							
 							<!-- This is the function for checking solutions-->
 							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
@@ -110,7 +100,7 @@
 
 
 
-						<!--			
+				<!--			
 					<boxleft>
 				
 						this is the testing text yada yada yada yada yada	
@@ -146,13 +136,7 @@
 
 				}
 
-				
-
-
 			</style>
-
-
-
 
 
 <!-- This is the function for checking solutions-->
@@ -165,7 +149,7 @@
 						
 						
 			
-							if (name != "arr[i]") {
+							if (name != "output") {
 								window.alert("Incorrect Please try again");
 								name.focus();
 								return false;
@@ -181,9 +165,6 @@
 						}
 					</script>
 			
-
-
-
 
 					<style>
 						answerbox {

@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	https://www.geeksforgeeks.org/html-forms/
+-->
+<html>
+	<head>
+		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Python</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<nav id="menu">
+						<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="InputComparisonTest.html">Learn Java</a></li>
+								<li><a href="generic2.html">Learn C++</a></li>
+							   
+						</ul>
+				</nav>
+ 					<li><a href="generic9.html">Faculty and Staff Contacts</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Intro to variables lesson</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2><font color = "green">Lesson 2</font></h2>
+						</header>
+						<p>
+							
+							<br>
+							Now that we are familiar with strings we will learn about the concept of variables.
+							A variable is a container that can contain different types of data. A variable type that you are now familiar with is the string,
+							the string only contains characters. Other types of variables include integer which is any whole number, and a float, which is a whole number that also has decimal places.
+							In this lesson we will practice creating and using these variables. First we will create two new integer variables
+						    <div class="image">
+								<img src="images/lessonTwoImages/Picture1.png" alt="" />
+							
+							Now that we have two variables, we will then practice using them. First, we will add and store the result in a new variable.							
+							<div class="image">
+								<img src="images/lessonTwoImages/Picture2.png" alt="" />
+
+							We will now print this new variable.
+							<div class="image">
+								<img src="images/lessonTwoImages/Picture3.png" alt="" />
+							
+
+							And look at the output in our terminal
+							<div class="image">
+								<img src="images/lessonTwoImages/Picture4.png" alt="" />
+								
+
+							<br><br>
+							<h1 style="text-align: center;">Question 1</h1>
+							<b><br>Q1</b>If the variables contained the numbers 5 and 9 what would be the value of number_three?<br>
+							
+							<!-- This is the function for checking solutions-->
+							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
+						
+								<p>Answer: <input type="text" placeholder = "answer" id = "myForm" size="65" name="Name" /></p>
+								<p id="isCorrect"></p>
+									<br />
+									<button type = "submit">Submit</button>
+			
+									<br><br><br><br><br><br><br><br> 
+			 
+						<a href="Lesson3.html"><button type = "button" class = "button1">   <font color = "black">Next</font> </button>	</a>
+						<a href="Lesson1.html"><button type = "button" class = "button2">  <font color = "black">Back</font> </button>	</a>
+	
+
+
+
+
+				<!--			
+					<boxleft>
+				
+						this is the testing text yada yada yada yada yada	
+						
+					</boxleft>
+					-->
+					</div>
+				</div>
+			</section>
+
+			<style>
+				.button1
+				{
+					color: green;
+					background-color: lightgreen;
+					position: absolute;
+  					top:90%;
+ 					right: 0%;
+  					width: 120px;
+  					transform: translateY(-20%);
+
+				}
+
+				.button2
+				{
+					color: red;
+					background-color: lightsalmon;
+					position: absolute;
+  					top:90%;
+ 					right: 70%;
+  					width: 120px;
+  					transform: translateY(-20%);
+
+				}
+
+			</style>
+
+
+<!-- This is the function for checking solutions-->
+<html>
+	<head>
+		<script>
+
+			function correctAnswer(color, state)
+			{
+				var element = document.getElementById("myForm");
+				element.style.backgroundColor = color;
+
+				var hint = document.getElementById("isCorrect");
+				hint.innerHTML = state;
+			}
+
+
+
+			function solutionCheck() {
+				var name =
+					document.forms.RegForm.Name.value;
+			
+			
+
+				if (name != "14") {
+					correctAnswer('salmon', "Incorrect");
+					//window.alert("Incorrect Please try again");
+					//name.focus();
+					return false;
+				}
+				else 
+				{
+					 correctAnswer('lightgreen', "Correct");
+					
+					// window.alert("Correct!");
+					// name.focus();
+					return false;
+					 
+				}
+				
+				//return true;
+			}
+		</script>
+
+
+		<style>
+			answerbox {
+				box-sizing: border-box;
+				width: 100%;
+				border: 100px solid black;
+				float: left;
+				align-content: center;
+				align-items: center;
+			}
+
+			form {
+				margin: 0 auto;
+				width: 600px;
+			}
+
+			boxleft 
+			{
+				background: ghostwhite;
+				width: 50px;
+				font-size: 20px;
+				padding: 10px;
+				border: 1px solid orangered;
+				margin: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

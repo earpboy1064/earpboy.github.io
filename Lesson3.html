@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	https://www.geeksforgeeks.org/html-forms/
+-->
+<html>
+	<head>
+		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Python</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+						<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="InputComparisonTest.html">Learn Java</a></li>
+								<li><a href="generic2.html">Learn C++</a></li>
+							   
+						</ul>
+				</nav>
+ 					
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Interest Calculator</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2><font color = "green">Lesson 3</font></h2>
+						</header>
+						<p>
+							
+							<br>
+							Variables are a very important concept to understand, and that is why will will write a small program using several differnt types of variables to 
+							further help us learn how they work and to improve our comfort with them. <br><br>
+							We will write a simple intrest calculator that will print the amound of interest generated over a period of time.
+							I encurage you to go off and try this yourself first and then come back to this lesson to see how close you were able to get.
+							<br><br>
+							first thing we will do is create a variable to hold the intrest amount. We will then need the user to input the amount of money and the total time that has passed inorder for us to calculate the interest.
+							<div class="image">
+								<img src="images/lessonimages/PythonLesson3img1.PNG" alt="" />
+							
+							<br>Now that we have all of the data we need we write the formula to calculate the interest.							
+							<div class="image">
+								<img src="images/lessonimages/PythonLesson3img2.PNG" alt="" />
+
+							<br>Once we have the amount of interest acrude we can print the it so the user can see the amount of interest owed.
+							<div class="image">
+								<img src="images/lessonimages/PythonLesson3img3.PNG" alt="" />
+							
+
+							<br>We can now run our program and input the values for each variable as if we were the intended user.
+							<div class="image">
+								<img src="images/lessonimages/PythonLesson3img4.PNG" alt="" />
+								We can see that the total interest accrued is $3000. 
+
+								<br><br>With the completion of this program you have written your first real program!
+								
+
+
+
+
+
+
+
+
+
+<!-- ################   Below is the Question related html and javascript   ################-->
+							<br><br>
+							<h1 style="text-align: center;">Question 1</h1>
+							<b><br></b>What is the variable type of the variable totalInterestAccrued<br><br>
+							
+							<!-- This is the function for checking solutions-->
+							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
+						
+					<p>Answer: <input type="text" placeholder = "answer" id = "myForm" size="65" name="Name" /></p>
+					<p id="isCorrect"></p>
+						<br />
+						<button type = "submit">Submit</button>
+
+						<br><br><br><br><br><br><br><br> 
+ 
+						<a href=".html"><button type = "button" id="mybutton" class = "button1">   <font color = "black">Chapter Quiz</font> </button>	</a>
+						<a href="Lesson2.html"><button type = "button" class = "button2">  <font color = "black">Back</font> </button>	</a>
+	
+
+
+
+
+				
+					</div>
+				</div>
+			</section>
+
+			<style>
+				.button1
+				{
+
+					color: green;
+					background-color: lightgreen;
+					position: absolute;
+  					top:90%;
+ 					right: 0%;
+					left: 95%;
+  					width: 140px;
+  					transform: translateY(-20%);
+					text-align: left;
+
+				}
+
+				.button2
+				{
+					color: red;
+					background-color: lightsalmon;
+					position: absolute;
+  					top:90%;
+ 					right: 70%;
+  					width: 120px;
+  					transform: translateY(-20%);
+
+				}
+
+			</style>
+
+
+<!-- This is the function for checking solutions-->
+			<html>
+				<head>
+					<script>
+
+						function correctAnswer(color, state)
+						{
+							var element = document.getElementById("myForm");
+							element.style.backgroundColor = color;
+
+							var hint = document.getElementById("isCorrect");
+							hint.innerHTML = state;
+						}
+
+
+
+						function solutionCheck() {
+							var name =
+								document.forms.RegForm.Name.value;
+						
+						
+			
+							if (name != "float") {
+								correctAnswer('salmon', "Incorrect");
+								//window.alert("Incorrect Please try again");
+								//name.focus();
+								return false;
+							}
+							else 
+							{
+								 correctAnswer('lightgreen', "Correct");
+								
+								// window.alert("Correct!");
+								// name.focus();
+								return false;
+								 
+							}
+							
+							//return true;
+						}
+					</script>
+			
+
+					<style>
+						answerbox {
+							box-sizing: border-box;
+							width: 100%;
+							border: 100px solid black;
+							float: left;
+							align-content: center;
+							align-items: center;
+						}
+			
+						form {
+							margin: 0 auto;
+							width: 600px;
+						}
+			
+						boxleft 
+						{
+							background: ghostwhite;
+							width: 50px;
+							font-size: 20px;
+							padding: 10px;
+							border: 1px solid orangered;
+							margin: 10px;
+						}
+					</style>
+				</head>
+			
+				<body>
+					
+			</html>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Example</h3>
+						</section>
+						<section>
+							<ul class="alt">
+								<li><a href="http://sciences.aum.edu/academic-programs">Academic Programs</a></li>
+                                                                <li><a href="http://sciences.aum.edu/student-resources">Student Resources</a></li>
+                                                               
+							</ul>
+						</section>
+						<section>
+							<h4>Follow Us!</h4>
+							<ul class="plain">
+								<li><a href="https://twitter.com/aumontgomery"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                                                                <li><a href="https://www.facebook.com/AUM.COS/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                                                                <li><a href="https://www.instagram.com/auburnmontgomery/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
