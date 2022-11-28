@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<title>Java Lesson 1</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -18,32 +18,26 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index.html">Example lesson</a>
+				<a class="logo" href="index.html">Java</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
+		<nav id="menu">
+			<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">TA/GA Applications</a></li>
-					<li><a href="generic.html">Academic Advising</a></li>
-                                        <li><a href="generic2.html">Programs of Study </a></li>
-                                        <li><a href="generic3.html">Career Options and Recent Alumni</a></li>
-                                        <li><a href="generic4.html">Scholarships</a></li>
-                                        <li><a href="generic5.html">Student Clubs and Organizations</a></li>
-                                        <li><a href="generic6.html">Policies, Procedures, and Math Placement Testing</a></li>
-                                        <li><a href="generic7.html">Colloquia, Conferences and Other Events</a></li>
-                                        <li><a href="generic8.html">Research Interests and Seminars</a></li>
- 					<li><a href="generic9.html">Faculty and Staff Contacts</a></li>
-				</ul>
-			</nav>
+					<li><a href="PythonIntro.html">Learn Python</a></li>
+					<li><a href="C++Intro.html">Learn C++</a></li>
+				   
+			</ul>
+	</nav>
+		 
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Example Lesson </h1>
+				<h1>Hello World</h1>
 			</div>
 
 		<!-- Main -->
@@ -53,50 +47,54 @@
 						<header>
 							<h2><font color = "green">Lesson 1</font></h2>
 						</header>
+
 						<p>
 							
 							<br>
 							The first thing we are going to learn is how to get the computer to print out whatever message me want!
-							In order to do this we must open our chosen programming environment and create a new python file. 
+							In order to do this we must open our chosen programming environment and create a new CPP file. 
 							This file will be where we will write our first program. To start off we need to define what we want the program to do.
 							This can be done on paper or in your head if you already have a good idea of what you want to accomplish. 
 							Our goal here is to print the words “Hello world” to the console. This printing will be done through the use of strings. 
 							The best way to understand strings is by looking at the words on this page. A string is a combination of usually two or more characters. 
-						 	Strings can be used to contain single words or an entire sentence or even an entire book. In our program our string will contain the words “Hello world” so the computer will know what to print.
-							To get started lets define our string, 
-						    <div class="image">
-								<img src="images/lessonimages/Output.PNG" alt="" />
+						 	Strings can be used to contain single words or an entire sentence or even an entire book. In c++ before we begin using the string type we must include it first.
+							We can do this by typing this at the top of our page <code>#include "string.h"</code>
 							
+							<br>In our program our string will contain the words “Hello world” so the computer will know what to print.
+							To get started lets define our string,
+							<br> 
+							<code>string output = "Hello world"; </code>
+							<br>
 							The name of our string is output, this is how we will tell the computer what it should print. 
-							
-							<div class="image">
-								<img src="images/lessonimages/print.PNG" alt="" />
-
+							<br>
+							<code> cout << (output) </code>
+							<br>
 							After we have made our new string and defined what it contains, 
-							we will then tell the computer to print our string. 
-							If we check our Terminal we should be able to see our string has been printed.
-							<div class="image">
-								<img src="images/lessonimages/outputPython.PNG" alt="" />
-							
+							we will then tell the computer to print our string. If we check our Terminal we should be able to see our string has been printed.
+							<br>
+							<code>Hello World</code>
+							</p>
 
-							<br><br>
+							<br><br><br>
 							<h1 style="text-align: center;">Question 1</h1>
 							<b><br>Q1</b>What is the name of the string we used?<br>
 							
+							<p><a href="Lesson2Java.html"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
+							<a href="JavaIntro.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button>	</a></p>
+		
+	
 							<!-- This is the function for checking solutions-->
-							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
+							<form name="RegForm" class = "form shift" onsubmit="return solutionCheck()" method="post">
 						
-					<p>Answer: <input type="text"
-										size="65" name="Name" /></p>
+							<p>Answer: <input type="text" class = "text" placeholder = "answer" id = "myForm" size="65" name="Name" /></p>
+							<p id="isCorrect"></p>
+								<br />
+								<button type = "submit">Submit</button>
 			
-						<br />
-						<button type = "submit">Submit</button>
-
-						<br><br><br><br><br><br><br><br> 
- 
-						<button class = "button button1">  <a href="Lesson2Java.html"> <font color = "black">Next</font></a> </button>	
-						<button class = "button button2"> <a href="Lesson1Java.html"> <font color = "black">Back</font></a> </button>	
-
+								<br><br><br><br><br><br><br><br> 
+			 
+						
+					
 
 
 
@@ -112,122 +110,105 @@
 			</section>
 
 			<style>
+
+				
 				.button1
 				{
 					color: green;
 					background-color: lightgreen;
-					position: absolute;
-  					top:90%;
- 					right: 20%;
-  					width: 120px;
-  					transform: translateY(-20%);
+					width: 170px;
+					float: right;
+					transform: translateY(670%);
+
+  					
 
 				}
-
+				
 				.button2
 				{
 					color: red;
 					background-color: lightsalmon;
-					position: absolute;
-  					top:90%;
- 					right: 70%;
-  					width: 120px;
-  					transform: translateY(-20%);
-
+					float: left;
+					width: 170px;
+					transform: translateY(670%);
 				}
 
 			</style>
 
 
 <!-- This is the function for checking solutions-->
-			<html>
-				<head>
-					<script>
-						function solutionCheck() {
-							var name =
-								document.forms.RegForm.Name.value;
-						
-						
+<html>
+	<head>
+		<script>
+
+			function correctAnswer(color, state)
+			{
+				var element = document.getElementById("myForm");
+				element.style.backgroundColor = color;
+
+				var hint = document.getElementById("isCorrect");
+				hint.innerHTML = state;
+			}
+
+
+
+			function solutionCheck() {
+				var name =
+					document.forms.RegForm.Name.value;
 			
-							if (name != "output") {
-								window.alert("Incorrect Please try again");
-								name.focus();
-								return false;
-							}
-							else 
-							{
-								window.alert("Correct!");
-								name.focus();
-								return true;
-							}
-							
-							return true;
-						}
-					</script>
 			
 
-					<style>
-						answerbox {
-							box-sizing: border-box;
-							width: 100%;
-							border: 100px solid black;
-							float: left;
-							align-content: center;
-							align-items: center;
-						}
-			
-						form {
-							margin: 0 auto;
-							width: 600px;
-						}
-			
-						boxleft 
-						{
-							background: ghostwhite;
-							width: 50px;
-							font-size: 20px;
-							padding: 10px;
-							border: 1px solid orangered;
-							margin: 10px;
-						}
-					</style>
-				</head>
-			
-				<body>
+				if (name != "output") {
+					correctAnswer('salmon', "Incorrect");
+					//window.alert("Incorrect Please try again");
+					//name.focus();
+					return false;
+				}
+				else 
+				{
+					 correctAnswer('lightgreen', "Correct");
 					
-			</html>
-			
+					// window.alert("Correct!");
+					// name.focus();
+					return false;
+					 
+				}
+				
+				//return true;
+			}
+		</script>
 
 
+		<style>
+			answerbox {
+				box-sizing: border-box;
+				width: 100%;
+				border: 100px solid black;
+				float: left;
+				align-content: center;
+				align-items: center;
+			}
 
+			form {
+				margin: 0 auto;
+				width: 600px;
+			}
 
+			boxleft 
+			{
+				background: ghostwhite;
+				width: 50px;
+				font-size: 20px;
+				padding: 10px;
+				border: 1px solid orangered;
+				margin: 10px;
+			}
+		</style>
+	</head>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<body>
+		
+</html>
 
 
 

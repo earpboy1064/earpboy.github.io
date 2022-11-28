@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<title>Java Lesson 3</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -18,7 +18,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index.html">intro to variables lesson</a>
+				<a class="logo" href="index.html">Java</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -26,22 +26,17 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
-					<nav id="menu">
 						<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="InputComparisonTest.html">Learn Java</a></li>
-								<li><a href="generic2.html">Learn C++</a></li>
+								<li><a href="PythonIntro.html">Learn Python</a></li>
+								<li><a href="C++Intro.html">Learn C++</a></li>
 							   
 						</ul>
 				</nav>
- 					<li><a href="generic9.html">Faculty and Staff Contacts</a></li>
-				</ul>
-			</nav>
-
+ 					
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Intro to variables lesson</h1>
+				<h1>Interest Calculator</h1>
 			</div>
 
 		<!-- Main -->
@@ -49,60 +44,89 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2><font color = "green">Lesson 2</font></h2>
+							<h2><font color = "green">Lesson 3</font></h2>
 						</header>
 						<p>
 							
 							<br>
-							Now that we are familiar with strings we will learn about the concept of variables.
-							A variable is a container that can contain different types of data. A variable type that you are now familiar with is the string,
-							the string only contains characters. Other types of variables include integer which is any whole number, and a float, which is a whole number that also has decimal places.
-							In this lesson we will practice creating and using these variables. First we will create two new integer variables
-						    <div class="image">
-								<img src="images/lessonTwoImages/Picture1.png" alt="" />
-							
-							Now that we have two variables, we will then practice using them. First, we will add and store the result in a new variable.							
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture2.png" alt="" />
-
-							We will now print this new variable.
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture3.png" alt="" />
-							
-
-							And look at the output in our terminal
-							<div class="image">
-								<img src="images/lessonTwoImages/Picture4.png" alt="" />
+							Variables are a very important concept to understand, and that is why will will write a small program using several differnt types of variables to 
+							further help us learn how they work and to improve our comfort with them. <br><br>
+							We will write a simple intrest calculator that will print the amound of interest generated over a period of time.
+							I encurage you to go off and try this yourself first and then come back to this lesson to see how close you were able to get.
+							<br><br>
+							first thing we will do is create a variable to hold the intrest amount. We will then need the user to input the amount of money and the total time that has passed inorder for us to calculate the interest.
+							<br><code>
+								#include&ltiostream&gt</code><br>
+								<code>#include"string.h"</code><br><br>
 								
+								<code> namespace std;</code><br><br>
+								
+								<code>int main()<br></code>
+								<code>{</code><br>
+									<code>float interest = 0.0;<br></code>
+									<code>float moneyOwed = 0.0;<br></code>
+									<code>int timePassed = 0;<br></code>
+									<code>float totalInterestAccrued = 0;<br></code>
+								
+								
+									<code>cout << "Please Type the interest percentage: "<< endl;<br></code>
+									<code>cin >> interest;<br></code>
+								
+									<code>cout << "Please type the amount of money owed: "<< endl;<br></code>
+									<code>cin >> moneyOwed;<br></code>
+								
+									<code>cout << "Please type the amount of time passed in months: " << endl;<br></code>
+									<code>cin >> timePassed;<br></code>
+								
+							
+							<br>Now that we have all of the data we need we write the formula to calculate the interest.							
+							
+							<br><code>	interest = interest / 100; </code><br>
+							<code>		totalInterestAccrued = (interest * moneyOwed) * timePassed;	</code>
 
+
+
+
+
+
+
+							<br>Once we have the amount of interest acrude we can print the it so the user can see the amount of interest owed.
+							
+							<br> <code>cout << "The total Interest Accrued is $" << totalInterestAccrued;</code><br>
+							<br>We can now run our program and input the values for each variable as if we were the intended user.
+							 
+
+								<br><br>With the completion of this program you have written your first real program!
+							
+
+<!-- ################   Below is the Question related html and javascript   ################-->
 							<br><br>
 							<h1 style="text-align: center;">Question 1</h1>
-							<b><br>Q1</b>If the variables contained the numbers 5 and 9 what would be the value of number_three?<br>
+							<br>
+							<h3 style ="text-align: center;">What is the variable type of the variable totalInterestAccrued</h3><br><br>
 							
+								
+							<p><a href="#"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
+							<a href="Lesson2Java.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button></a></p>
+			
+
+
 							<!-- This is the function for checking solutions-->
 							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
 						
-					<p>Answer: <input type="text"
-										size="65" name="Name" /></p>
-			
+					<p>Answer: <input type="text" placeholder = "answer" id = "myForm" size="65" name="Name" /></p>
+					<p id="isCorrect"></p>
 						<br />
 						<button type = "submit">Submit</button>
 
 						<br><br><br><br><br><br><br><br> 
  
-						<button class = "button button1"> Next </button>	
-						<button class = "button button2"> Back </button>	
-
-
-
-
-				<!--			
-					<boxleft>
-				
-						this is the testing text yada yada yada yada yada	
 						
-					</boxleft>
-					-->
+
+
+
+
+				
 					</div>
 				</div>
 			</section>
@@ -110,26 +134,21 @@
 			<style>
 				.button1
 				{
+
 					color: green;
 					background-color: lightgreen;
-					position: absolute;
-  					top:90%;
- 					right: 0%;
-  					width: 120px;
-  					transform: translateY(-20%);
-
+					width: 170px;
+					float: right;
+					transform: translateY(670%);
 				}
 
 				.button2
 				{
 					color: red;
 					background-color: lightsalmon;
-					position: absolute;
-  					top:90%;
- 					right: 70%;
-  					width: 120px;
-  					transform: translateY(-20%);
-
+					float: left;
+					width: 170px;
+					transform: translateY(670%);
 				}
 
 			</style>
@@ -139,25 +158,41 @@
 			<html>
 				<head>
 					<script>
+
+						function correctAnswer(color, state)
+						{
+							var element = document.getElementById("myForm");
+							element.style.backgroundColor = color;
+
+							var hint = document.getElementById("isCorrect");
+							hint.innerHTML = state;
+						}
+
+
+
 						function solutionCheck() {
 							var name =
 								document.forms.RegForm.Name.value;
 						
 						
 			
-							if (name != "14") {
-								window.alert("Incorrect Please try again");
-								name.focus();
+							if (name != "float") {
+								correctAnswer('salmon', "Incorrect");
+								//window.alert("Incorrect Please try again");
+								//name.focus();
 								return false;
 							}
 							else 
 							{
-								window.alert("Correct!");
-								name.focus();
-								return true;
+								 correctAnswer('lightgreen', "Correct");
+								
+								// window.alert("Correct!");
+								// name.focus();
+								return false;
+								 
 							}
 							
-							return true;
+							//return true;
 						}
 					</script>
 			
@@ -192,39 +227,6 @@
 				<body>
 					
 			</html>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
