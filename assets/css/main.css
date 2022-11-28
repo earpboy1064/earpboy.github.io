@@ -2012,7 +2012,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(rgba(255, 127, 80, 0.25), rgba(255, 127, 80, 0.25)/*, #111111 74%*/);
+    background: linear-gradient(rgba(2, 133, 100, 0.25), rgba(18, 100, 2, 0.25)/*, #111111 74%*/);
     content: ' ';
     display: block;
     height: 100%;

@@ -47,30 +47,33 @@
 						<header>
 							<h2><font color = "green">Lesson 1</font></h2>
 						</header>
-
+						<audio controls>
+							<Source src="./SoundRecordings/Java1.ogg"  type = "audio/ogg"/>	
+							Your browser does not support audio	
+						</audio>
 						<p>
 							
 							<br>
-							The first thing we are going to learn is how to get the computer to print out whatever message me want!
-							In order to do this we must open our chosen programming environment and create a new CPP file. 
+							The first thing we are going to learn is how to get the computer to print out whatever message me want.
+							In order to do this we must open our chosen programming environment and create a new Java file. 
 							This file will be where we will write our first program. To start off we need to define what we want the program to do.
 							This can be done on paper or in your head if you already have a good idea of what you want to accomplish. 
 							Our goal here is to print the words “Hello world” to the console. This printing will be done through the use of strings. 
 							The best way to understand strings is by looking at the words on this page. A string is a combination of usually two or more characters. 
-						 	Strings can be used to contain single words or an entire sentence or even an entire book. In c++ before we begin using the string type we must include it first.
-							We can do this by typing this at the top of our page <code>#include "string.h"</code>
+						 	Strings can be used to contain single words or an entire sentence or even an entire book. 
 							
 							<br>In our program our string will contain the words “Hello world” so the computer will know what to print.
 							To get started lets define our string,
 							<br> 
-							<code>string output = "Hello world"; </code>
+							<code>String output = "Hello world"; </code>
 							<br>
-							The name of our string is output, this is how we will tell the computer what it should print. 
-							<br>
-							<code> cout << (output) </code>
-							<br>
+							The name of our string is Output, this is how we will tell the computer what it should print. 
 							After we have made our new string and defined what it contains, 
-							we will then tell the computer to print our string. If we check our Terminal we should be able to see our string has been printed.
+							we will then tell the computer to print our string. 
+							<br>
+							<code> System.out.println(Output); </code>
+							<br>
+							If we check our Terminal we should be able to see our string has been printed.
 							<br>
 							<code>Hello World</code>
 							</p>
@@ -158,7 +161,7 @@
 			
 			
 
-				if (name != "output") {
+				if (name.toLowerCase() != "output") {
 					correctAnswer('salmon', "Incorrect");
 					//window.alert("Incorrect Please try again");
 					//name.focus();

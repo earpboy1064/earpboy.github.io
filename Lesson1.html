@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<title>Python Lesson 1</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -24,12 +24,13 @@
 				</nav>
 			</header>
 
+			
 		<!-- Nav -->
 		<nav id="menu">
 			<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="InputComparisonTest.html">Learn Java</a></li>
-					<li><a href="generic2.html">Learn C++</a></li>
+					<li><a href="JavaIntro.html">Learn Java</a></li>
+					<li><a href="C++Intro.html">Learn C++</a></li>
 				   
 			</ul>
 	</nav>
@@ -37,7 +38,7 @@
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Example Lesson </h1>
+				<h1>Hello World</h1>
 			</div>
 
 		<!-- Main -->
@@ -47,11 +48,16 @@
 						<header>
 							<h2><font color = "green">Lesson 1</font></h2>
 						</header>
-
+						
+						<audio controls>
+						<Source src="./SoundRecordings/Python1.ogg"  type = "audio/ogg"/>	
+						Your browser does not support audio	
+						</audio>
+		
 						<p>
 							
 							<br>
-							The first thing we are going to learn is how to get the computer to print out whatever message me want!
+							The first thing we are going to learn is how to get the computer to print out whatever message we want.
 							In order to do this we must open our chosen programming environment and create a new python file. 
 							This file will be where we will write our first program. To start off we need to define what we want the program to do.
 							This can be done on paper or in your head if you already have a good idea of what you want to accomplish. 
@@ -155,7 +161,7 @@
 			
 			
 
-				if (name != "output") {
+				if (name.toLowerCase() != "output") {
 					correctAnswer('salmon', "Incorrect");
 					//window.alert("Incorrect Please try again");
 					//name.focus();

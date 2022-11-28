@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Math and Computer Sciences Advisors | AUM College of Sciences Departments</title>
+		<title>Python Lesson 3</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -28,8 +28,8 @@
 			<nav id="menu">
 						<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="InputComparisonTest.html">Learn Java</a></li>
-								<li><a href="generic2.html">Learn C++</a></li>
+								<li><a href="JavaIntro.html">Learn Java</a></li>
+								<li><a href="C++Intro.html">Learn C++</a></li>
 							   
 						</ul>
 				</nav>
@@ -46,6 +46,10 @@
 						<header>
 							<h2><font color = "green">Lesson 3</font></h2>
 						</header>
+						<audio controls>
+							<Source src="./SoundRecordings/Python3.ogg"  type = "audio/ogg"/>	
+							Your browser does not support audio	
+						</audio>
 						<p>
 							
 							<br>
@@ -55,30 +59,41 @@
 							I encurage you to go off and try this yourself first and then come back to this lesson to see how close you were able to get.
 							<br><br>
 							first thing we will do is create a variable to hold the intrest amount. We will then need the user to input the amount of money and the total time that has passed inorder for us to calculate the interest.
-							<div class="image">
-								<img src="images/lessonimages/PythonLesson3img1.PNG" alt="" />
 							
+							<br><code>interest = 0.0</code><br>
+							<code>moneyOwed = 0.0</code><br>
+							<code>timePassed = 0</code><br>
+							<br>
+							<code>print("Please type the interest percentage")</code><br>
+							<code>interest = float(input())</code><br>
+							<br>
+							<code>print("Please type the amount of money owed")</code><br>
+							<code>moneyOwed = float(input("$"))</code><br>
+							<br>
+							<code>print("please type the amount of time passed in months") </code><br>
+							<code>timePassed = int(input())</code><br>
 							<br>Now that we have all of the data we need we write the formula to calculate the interest.							
-							<div class="image">
-								<img src="images/lessonimages/PythonLesson3img2.PNG" alt="" />
+							<br>
+							Dividing interest by 100 to convert to percentage:<br>
+							<code>interest = interest / 100</code><br>
+							<br>
+							calculating interest:<br>
+							<code>totalInterestAccrued = (interest * moneyOwed) * timePassed</code><br>
 
-							<br>Once we have the amount of interest acrude we can print the it so the user can see the amount of interest owed.
-							<div class="image">
-								<img src="images/lessonimages/PythonLesson3img3.PNG" alt="" />
+							Now that we have the data calculated we can print the results
+							<br><code>print("The total interest accrued is $", totalInterestAccrued)</code>
+
 							
-
-							<br>We can now run our program and input the values for each variable as if we were the intended user.
-							<div class="image">
-								<img src="images/lessonimages/PythonLesson3img4.PNG" alt="" />
-								We can see that the total interest accrued is $3000. 
+							<br><br>We can now run our program and input the values for each variable as if we were the intended user.
+							
 
 								<br><br>With the completion of this program you have written your first real program!
 							
 
 <!-- ################   Below is the Question related html and javascript   ################-->
 							<br><br>
-							<h1 style="text-align: center;">Question 1</h1>
-							<b><br></b>What is the variable type of the variable totalInterestAccrued<br><br>
+							<h1 style="text-align: center;">Question</h1>
+							<br><p style="text-align: center"> What is the variable type of the variable totalInterestAccrued?<br><br>
 							
 								
 							<p><a href="#"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
@@ -151,7 +166,7 @@
 						
 						
 			
-							if (name != "float") {
+							if (name.toLowerCase() != "float") {
 								correctAnswer('salmon', "Incorrect");
 								//window.alert("Incorrect Please try again");
 								//name.focus();
