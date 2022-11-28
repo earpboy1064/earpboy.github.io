@@ -2060,10 +2060,10 @@ ul.icons {
 
 /* CTA */
 #cta {
-  background-color: #ff7f50;
+  background-color: #1d6607;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(255, 127, 80, 0.25), rgba(255, 127, 80, 0.25)), url(../../images/AUM_library.jpeg);
+  background-image: linear-gradient(rgba(71, 131, 31, 0.26), rgba(10, 83, 8, 0.089)), url(../../images/dark.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
