@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Java Lesson 2</title>
+		<title>Java Lesson 4</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -36,7 +36,7 @@
  					
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>introduction to Variables</h1>
+				<h1>Conditionals</h1>
 			</div>
 
 		<!-- Main -->
@@ -44,48 +44,81 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2><font color = "green">Lesson 2</font></h2>
+							<h2><font color = "green">Lesson 4</font></h2>
 						</header>
-						<audio controls>
-							<Source src="./SoundRecordings/Java2.ogg"  type = "audio/ogg"/>	
-							Your browser does not support audio	
-						</audio>
-
-						
 						<p>
-							
+							<audio controls>
+								<Source src="./SoundRecordings/Java4.ogg"  type = "audio/ogg"/>	
+								Your browser does not support audio	
+							</audio>
 							<br>
-							Now that we are familiar with strings we will learn about the concept of variables.
-							A variable is a container that can contain different types of data. A variable type that you are now familiar with is the string which only contains characters. Other types of variables include integer which is any whole number, and a float, which is a whole number that also has decimal places.
-							In this lesson we will practice creating and using these variables. First we will create two new integer variables.
-							<br><code>int number_one = 10;</code><br><code>int number_two = 7;</code><br>
-							Now that we have two variables, we will then practice using them. First, we will add and store the result in a new variable.							
-							<br><code>int number_three = number_one + number_two;</code><br>
-							We will now print this new variable.
-							<br><code>System.out.println(number_three);</code><br>
-							And look at the output in our terminal
-							<br><code>17</code><br>
-							<br><br>
-							
+							The next important topic to learn is conditional statements. conditional statements allow the program to make a simple decision based on a defined reason. There exists several different ways 
+							to write conditional statement but for this example we will focus on the statements "if" and "else". We will use if and else to allow our interest calculator to tell the user if they have inputted 
+							incorrect values. The if statement will check to see if the value of the total accrued interest is greater then 0 and if it is not it will print an error message. The "else" will be used to signify what code should be run
+							if the total accrued interest is actually greater than 0. To begin we need to load up our previously written interest calculator.
+							<br><code>
+								import java.util.Scanner;</code><br>
+								<br>
 								
+								<code>class javaLesson4 {</code><br><br>
+								<code>{</code><br>
+								<code>public static void main()<br></code>
+								<code>{</code><br>
+									<code>float interest;<br></code>
+									<code>float moneyOwed;<br></code>
+									<code>int timePassed;<br></code>
+									<code>float totalInterestAccrued;<br></code>
+								
+								
+									<code>System.out.println("Please Type the interest percentage: ");<br></code>
+									<code>interest = Float.parseFloat(in.nextLine());<br></code>
+								
+									<code>System.out.println("Please type the amount of money owed: ");<br></code>
+									<code>moneyOwed = Float.parseFloat(in.nextLine());<br></code>
+								
+									<code>System.out.println("Please type the amount of time passed in months: ");<br></code>
+									<code>timePassed= Integer.parseInt(in.nextLine());<br></code>
+															
+							<br><code>	interest = interest / 100; </code><br>
+							<code>		totalInterestAccrued = (interest * moneyOwed) * timePassed;	</code>
+
+							<br><br>Once we have the amount of interest accrued we can use the if statement to determine if the values entered by the user are valid
+							<br> We can see below that the if statement is checking if the total interest accrued is either less then or equal to 0.
+							<br> If it is then the following code will be run
+							<br><code>if (totalInterestAccrued <= 0)</code>
+							<br><code>{</code>
+							<br><code> System.out.println("ERROR"); </code>
+							<br><code> System.out.println("Please try running the program again with the correct values");</code>
+							<br><code> }</code>
+
+							<br><br>If the value for total interest accrued is not less than or equal to 0 then the code below the else will execute
+							<br><br><code>else</code>
+							<br><code>{</code>
+							<br><code>System.out.println("The total Interest Accrued is $" + totalInterestAccrued);</code>
+							<br><code>}</code>
+							<br> <code>System.out.println("The total Interest Accrued is $" + totalInterestAccrued);</code><br>							 
+							<br><code>}</code><br>
+							<code>}</code><br>
+
+							<br>We can now run our program and input the values for each variable. To check if the if statement is working you can type a 0 for any of the variable and you will see the printed error message.
 
 
 
 
 
-
-
-
+							
 
 <!-- ################   Below is the Question related html and javascript   ################-->
 							<br><br>
-							<h1 style="text-align: center;">Question 1</h1>
-							<b><br></b>what would be the value of number_three if the first two variables had the values 5 and 9?<br><br>
+							<h1 style="text-align: center;">Question</h1>
+							<br>
+							<p style ="text-align: center;">Will the conditional if or else execute if the value for moneyOwed is 0</p>
 							
-							
-							<p><a href="Lesson3Java.html"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
-							   <a href="Lesson1Java.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button>	</a></p>
+								
+							<p><a href="index.html"><button type = "button" class = "button button1">   <font color = "black">Home</font> </button>	</a>
+							<a href="Lesson3Java.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button></a></p>
 			
+
 
 							<!-- This is the function for checking solutions-->
 							<form name="RegForm" onsubmit="return solutionCheck()" method="post">
@@ -97,6 +130,9 @@
 
 						<br><br><br><br><br><br><br><br> 
  
+						
+
+
 
 
 				
@@ -107,16 +143,14 @@
 			<style>
 				.button1
 				{
+
 					color: green;
 					background-color: lightgreen;
 					width: 170px;
 					float: right;
 					transform: translateY(670%);
-
-  					
-
 				}
-				
+
 				.button2
 				{
 					color: red;
@@ -125,6 +159,7 @@
 					width: 170px;
 					transform: translateY(670%);
 				}
+
 			</style>
 
 
@@ -150,7 +185,7 @@
 						
 						
 			
-							if (name != "14") {
+							if (name.toLowerCase() != "if") {
 								correctAnswer('salmon', "Incorrect");
 								//window.alert("Incorrect Please try again");
 								//name.focus();
@@ -201,39 +236,6 @@
 				<body>
 					
 			</html>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

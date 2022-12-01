@@ -47,36 +47,43 @@
 							<h2><font color = "green">Lesson 3</font></h2>
 						</header>
 						<p>
-							
+							<audio controls>
+								<Source src="./SoundRecordings/Java3.ogg"  type = "audio/ogg"/>	
+								Your browser does not support audio	
+							</audio>
 							<br>
-							Variables are a very important concept to understand, and that is why will will write a small program using several different types of variables to 
+							Variables are a very important concept to understand, and that is why will write a small program using several different types of variables to 
 							further help us learn how they work and to improve our comfort with them. <br><br>
 							We will write a simple interest calculator that will print the amount of interest generated over a period of time.
 							I encourage you to go off and try this yourself first and then come back to this lesson to see how close you were able to get.
 							<br><br>
-							first thing we will do is create a variable to hold the interest amount. We will then need the user to input the amount of money and the total time that has passed in order for us to calculate the interest.
+							first thing we will do is define the variables. We will then need the user to input the amount of money, interest rate, and the total time that has passed in order for us to calculate the interest.
+							in order to collect the user input in Java we must import the java utility Scanner. We will then need to create a new scanner object which we can use to read the users input from the terminal.
+							<br><br>Because we are using the java Scanner
+							we must remember that the scanner will always return a string. But for this exercise we will need floats and integers so we can do the arithmetic needed to calculate the interest. In order for us to convert the strings to the appropriate variable we can 
+							type Float.parseFloat(in.nextLine()) or Integer.parseInt(in.nextLine()) to collect and convert the user input to the appropriate type.  
 							<br><code>
-								#include&ltiostream&gt</code><br>
-								<code>#include"string.h"</code><br><br>
+								import java.util.Scanner;</code><br>
+								<br>
 								
-								<code> namespace std;</code><br><br>
-								
-								<code>int main()<br></code>
+								<code>class javaLesson3 {</code><br><br>
 								<code>{</code><br>
-									<code>float interest = 0.0;<br></code>
-									<code>float moneyOwed = 0.0;<br></code>
-									<code>int timePassed = 0;<br></code>
-									<code>float totalInterestAccrued = 0;<br></code>
+								<code>public static void main()<br></code>
+								<code>{</code><br>
+									<code>float interest;<br></code>
+									<code>float moneyOwed;<br></code>
+									<code>int timePassed;<br></code>
+									<code>float totalInterestAccrued;<br></code>
 								
 								
-									<code>cout << "Please Type the interest percentage: "<< endl;<br></code>
-									<code>cin >> interest;<br></code>
+									<code>System.out.println("Please Type the interest percentage: ");<br></code>
+									<code>interest = Float.parseFloat(in.nextLine());<br></code>
 								
-									<code>cout << "Please type the amount of money owed: "<< endl;<br></code>
-									<code>cin >> moneyOwed;<br></code>
+									<code>System.out.println("Please type the amount of money owed: ");<br></code>
+									<code>moneyOwed = Float.parseFloat(in.nextLine());<br></code>
 								
-									<code>cout << "Please type the amount of time passed in months: " << endl;<br></code>
-									<code>cin >> timePassed;<br></code>
+									<code>System.out.println("Please type the amount of time passed in months: ");<br></code>
+									<code>timePassed= Integer.parseInt(in.nextLine());<br></code>
 								
 							
 							<br>Now that we have all of the data we need we write the formula to calculate the interest.							
@@ -84,29 +91,30 @@
 							<br><code>	interest = interest / 100; </code><br>
 							<code>		totalInterestAccrued = (interest * moneyOwed) * timePassed;	</code>
 
-
-
-
-
-
-
-							<br>Once we have the amount of interest acrude we can print the it so the user can see the amount of interest owed.
+							<br>Once we have the amount of interest accrued we can print the it so the user can see the amount of interest owed.
 							
-							<br> <code>cout << "The total Interest Accrued is $" << totalInterestAccrued;</code><br>
+							<br> <code>System.out.println("The total Interest Accrued is $" + totalInterestAccrued);</code><br>
 							<br>We can now run our program and input the values for each variable as if we were the intended user.
 							 
+							<br><code>}</code><br>
+							<code>}</code><br>
+
+
+
+
+
 
 								<br><br>With the completion of this program you have written your first real program!
 							
 
 <!-- ################   Below is the Question related html and javascript   ################-->
 							<br><br>
-							<h1 style="text-align: center;">Question 1</h1>
+							<h1 style="text-align: center;">Question</h1>
 							<br>
-							<h3 style ="text-align: center;">What is the variable type of the variable totalInterestAccrued</h3><br><br>
+							<p style ="text-align: center;">What is the variable type of the variable totalInterestAccrued</p>
 							
 								
-							<p><a href="index.html"><button type = "button" class = "button button1">   <font color = "black">Home</font> </button>	</a>
+							<p><a href="Lesson4Java.html"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
 							<a href="Lesson2Java.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button></a></p>
 			
 
@@ -241,9 +249,11 @@
 							<ul class="alt">
 								 <h4>Lessons </h4>
 								<li><a href="JavaIntro.html">Java Intro</a></li>
-                                <li><a href="Lesson1Java.html">Java  Lesson 1</a></li>
-								<li><a href="Lesson2Java.html">Java  Lesson 2</a></li>
-								<li><a href="Lesson3Java.html">Java  Lesson 3</a></li>
+                                <li><a href="Lesson1Java.html">Java Lesson 1</a></li>
+								<li><a href="Lesson2Java.html">Java Lesson 2</a></li>
+								<li><a href="Lesson3Java.html">Java Lesson 3</a></li>
+								<li><a href="Lesson4Java.html">Java Lesson 4</a></li>
+
                          
 							</ul>
 						</section>
