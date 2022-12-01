@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Python Lesson 3</title>
+		<title>Python Lesson 4</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -36,7 +36,7 @@
  					
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Interest Calculator</h1>
+				<h1>Conditional Statements</h1>
 			</div>
 
 		<!-- Main -->
@@ -44,21 +44,19 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2><font color = "green">Lesson 3</font></h2>
+							<h2><font color = "green">Lesson 4</font></h2>
 						</header>
 						<audio controls>
-							<Source src="./SoundRecordings/Python3.ogg"  type = "audio/ogg"/>	
+							<Source src="./SoundRecordings/python4.ogg"  type = "audio/ogg"/>	
 							Your browser does not support audio	
 						</audio>
 						<p>
 							
 							<br>
-							Variables are a very important concept to understand, and that is why we will write a small program using several different types of variables to 
-							further help us learn how they work and to improve our comfort with them. <br><br>
-							We will write a simple interest calculator that will print the amount of interest generated over a period of time.
-							I encourage you to go off and try this yourself first and then come back to this lesson to see how close you were able to get.
-							<br><br>
-							first thing we will do is create a variable to hold the interest amount. We will then need the user to input the amount of money and the total time that has passed in order for us to calculate the interest.
+							The next important topic to learn is conditional statements. conditional statements allow the program to make a simple decision based on a defined reason. There exists several different ways 
+							to write conditional statement but for this example we will focus on the statements "if" and "else". We will use if and else to allow our interest calculator to tell the user if they have inputted 
+							incorrect values. The if statement will check to see if the value of the total accrued interest is greater then 0 and if it is not it will print an error message. The "else" will be used to signify what code should be run
+							if the total accrued interest is actually greater than 0. To begin we need to load up our previously written interest calculator.
 							
 							<br><code>interest = 0.0</code><br>
 							<code>moneyOwed = 0.0</code><br>
@@ -80,23 +78,28 @@
 							calculating interest:<br>
 							<code>totalInterestAccrued = (interest * moneyOwed) * timePassed</code><br>
 
-							Now that we have the data calculated we can print the results
+							<br><br>Once we have the amount of interest accrued we can use the if statement to determine if the values entered by the user are valid
+							<br> We can see below that the if statement is checking if the total interest accrued is either less then or equal to 0.
+							<br> If it is then the following code will be run
+							<br><code>if totalInterestAccrued <= 0:</code>
+							<br><code> print("ERROR")</code>
+							<br><code> print("Please try running the program again with the correct values")</code>
+
+							<br><br>If the value for total interest accrued is not less than or equal to 0 then the code below the else will execute
+							<br><code>else:</code>
 							<br><code>print("The total interest accrued is $", totalInterestAccrued)</code>
 
 							
-							<br><br>We can now run our program and input the values for each variable as if we were the intended user.
-							
-
-								<br><br>With the completion of this program you have written your first real program!
-							
+							<br>We can now run our program and input the values for each variable. To check if the if statement is working you can type a 0 for any of the variable and you will see the printed error message.
+														
 
 <!-- ################   Below is the Question related html and javascript   ################-->
 							<br><br>
 							<h1 style="text-align: center;">Question</h1>
-							<br><p style="text-align: center"> What is the variable type of the variable totalInterestAccrued?<br><br>
+							<br><p style="text-align: center">Will the conditional if or else execute if the value for moneyOwed is 0<br><br>
 							
 								
-							<p><a href="Lesson4.html"><button type = "button" class = "button button1">   <font color = "black">Next</font> </button>	</a>
+							<p><a href="index.html"><button type = "button" class = "button button1">   <font color = "black">Home</font> </button>	</a>
 							<a href="Lesson2.html"><button type = "button" class = "button button2">  <font color = "black">Back</font> </button></a></p>
 			
 
@@ -166,7 +169,7 @@
 						
 						
 			
-							if (name.toLowerCase() != "float") {
+							if (name.toLowerCase() != "if") {
 								correctAnswer('salmon', "Incorrect");
 								//window.alert("Incorrect Please try again");
 								//name.focus();

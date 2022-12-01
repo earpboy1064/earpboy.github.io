@@ -36,7 +36,7 @@
  					
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Interest Calculator</h1>
+				<h1>Conditional statements</h1>
 			</div>
 
 		<!-- Main -->
@@ -44,11 +44,11 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2><font color = "green">Lesson 3</font></h2>
+							<h2><font color = "green">Lesson 4</font></h2>
 						</header>
 						<p>
 							<audio controls>
-								<Source src="./SoundRecordings/Java4.ogg"  type = "audio/ogg"/>	
+								<Source src="./SoundRecordings/C++4.ogg"  type = "audio/ogg"/>	
 								Your browser does not support audio	
 							</audio>
 							<br>
@@ -57,49 +57,59 @@
 							incorrect values. The if statement will check to see if the value of the total accrued interest is greater then 0 and if it is not it will print an error message. The "else" will be used to signify what code should be run
 							if the total accrued interest is actually greater than 0. To begin we need to load up our previously written interest calculator.
 							<br><code>
-								import java.util.Scanner;</code><br>
-								<br>
+								#include&ltiostream&gt</code><br>
+								<code>#include"string.h"</code><br><br>
 								
-								<code>class javaLesson4 {</code><br><br>
+								<code> namespace std;</code><br><br>
+								
+								<code>int main()<br></code>
 								<code>{</code><br>
-								<code>public static void main()<br></code>
-								<code>{</code><br>
-									<code>float interest;<br></code>
-									<code>float moneyOwed;<br></code>
-									<code>int timePassed;<br></code>
-									<code>float totalInterestAccrued;<br></code>
+									<code>float interest = 0.0;<br></code>
+									<code>float moneyOwed = 0.0;<br></code>
+									<code>int timePassed = 0;<br></code>
+									<code>float totalInterestAccrued = 0;<br></code>
 								
+									<br>We will now collect user input.<br>
+									<code>cout << "Please Type the interest percentage: "<< endl;<br></code>
+									<code>cin >> interest;<br></code>
 								
-									<code>System.out.println("Please Type the interest percentage: ");<br></code>
-									<code>interest = Float.parseFloat(in.nextLine());<br></code>
+									<code>cout << "Please type the amount of money owed: "<< endl;<br></code>
+									<code>cin >> moneyOwed;<br></code>
 								
-									<code>System.out.println("Please type the amount of money owed: ");<br></code>
-									<code>moneyOwed = Float.parseFloat(in.nextLine());<br></code>
+									<code>cout << "Please type the amount of time passed in months: " << endl;<br></code>
+									<code>cin >> timePassed;<br></code>
 								
-									<code>System.out.println("Please type the amount of time passed in months: ");<br></code>
-									<code>timePassed= Integer.parseInt(in.nextLine());<br></code>
-															
+							
+							<br>Now that we have all of the data we need we write the formula to calculate the interest.							
+							
 							<br><code>	interest = interest / 100; </code><br>
 							<code>		totalInterestAccrued = (interest * moneyOwed) * timePassed;	</code>
+
+							<code>}</code><br>
+							<code>    }</code><br>
+
+
+
+
 
 							<br><br>Once we have the amount of interest accrued we can use the if statement to determine if the values entered by the user are valid
 							<br> We can see below that the if statement is checking if the total interest accrued is either less then or equal to 0.
 							<br> If it is then the following code will be run
 							<br><code>if (totalInterestAccrued <= 0)</code>
 							<br><code>{</code>
-							<br><code> System.out.println("ERROR"); </code>
-							<br><code> System.out.println("Please try running the program again with the correct values");</code>
+							<br><code> cout << "ERROR" << endl; </code>
+							<br><code> cout << "Please try running the program again with the correct values" << endl;</code>
 							<br><code> }</code>
 
 							<br><br>If the value for total interest accrued is not less than or equal to 0 then the code below the else will execute
 							<br><br><code>else</code>
 							<br><code>{</code>
-							<br><code>System.out.println("The total Interest Accrued is $" + totalInterestAccrued);</code>
+							<br><code>cout << "The total Interest Accrued is $" << totalInterestAccrued << endl;</code>
 							<br><code>}</code>
-							<br> <code>System.out.println("The total Interest Accrued is $" + totalInterestAccrued);</code><br>							 
+							<br> <code>cout << "The total Interest Accrued is $" << totalInterestAccrued << endl;</code><br>							 
 							<br><code>}</code><br>
 							<code>}</code><br>
-
+							 
 							<br>We can now run our program and input the values for each variable. To check if the if statement is working you can type a 0 for any of the variable and you will see the printed error message.
 
 
@@ -110,7 +120,7 @@
 							<br><br>
 							<h1 style="text-align: center;">Question</h1>
 							<br>
-						<p style ="text-align: center;">What is the variable type of the variable totalInterestAccrued</p>
+						<p style ="text-align: center;">Will the conditional if or else execute if the value for moneyOwed is 0</p>
 							
 								
 							<p><a href="index.html"><button type = "button" class = "button button1">   <font color = "black">Home</font> </button>	</a>
@@ -182,7 +192,7 @@
 						
 						
 			
-							if (name.toLowerCase() != "float") {
+							if (name.toLowerCase() != "if") {
 								correctAnswer('salmon', "Incorrect");
 								//window.alert("Incorrect Please try again");
 								//name.focus();
@@ -247,9 +257,11 @@
 							<ul class="alt">
 								 <h4>Lessons </h4>
 								<li><a href="C++Intro.html">C++ Intro</a></li>
-                                <li><a href="Lesson1C++.html">C++  Lesson 1</a></li>
-								<li><a href="Lesson2C++.html">C++  Lesson 2</a></li>
-								<li><a href="Lesson3C++.html">C++  Lesson 3</a></li>
+                                <li><a href="Lesson1C++.html">C++ Lesson 1</a></li>
+								<li><a href="Lesson2C++.html">C++ Lesson 2</a></li>
+								<li><a href="Lesson3C++.html">C++ Lesson 3</a></li>
+								<li><a href="Lesson4C++.html">C++ Lesson 4</a></li>
+
                          
 							</ul>
 						</section>
